@@ -1,0 +1,17 @@
+/* Tema claro: únicamente decisiones de color */
+:root {
+    color-scheme: light;
+    --fondo: #f2f2f2;
+    --superficie: #c7c7c7;
+    --texto: #000000;
+    --texto-boton: #ffffff;
+    --borde: #777777;
+    --acento: #333333;
+}
+body { background: var(--fondo); color: var(--texto); }
+.encabezado, .pie { background: var(--superficie); color: var(--texto); }
+.contenido { background: var(--fondo); color: var(--texto); }
+.nav__enlace { color: var(--texto); }
+.tarjeta { background: #ffffff; }
+.formulario__campo { background: #ffffff; color: var(--texto); }
+.tabla-tarifas { background: #ffffff; }

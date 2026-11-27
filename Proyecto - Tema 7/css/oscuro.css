@@ -1,0 +1,17 @@
+/* Tema oscuro: mismos componentes y estructura que el tema claro */
+:root {
+    color-scheme: dark;
+    --fondo: #696969;
+    --superficie: #333333;
+    --texto: #ffffff;
+    --texto-boton: #ffffff;
+    --borde: #aaaaaa;
+    --acento: #202020;
+}
+body { background: var(--fondo); color: var(--texto); }
+.encabezado, .pie { background: var(--superficie); color: var(--texto); }
+.contenido { background: var(--fondo); color: var(--texto); }
+.nav__enlace { color: var(--texto); }
+.tarjeta { background: #555555; }
+.formulario__campo { background: #4a4a4a; color: var(--texto); }
+.tabla-tarifas { background: #555555; }

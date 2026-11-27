@@ -1,0 +1,88 @@
+/* NEXO — estilos estructurales compartidos
+   Los colores se definen en claro.css y oscuro.css. */
+
+:root {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    min-width: 320px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.encabezado { padding: 20px; }
+.encabezado__contenido { max-width: 1200px; margin: 0 auto; }
+.logo { display: block; width: min(100%, 500px); height: auto; margin: 0 auto 16px; }
+
+.nav__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav__enlace { display: inline-block; padding: 8px 4px; text-decoration: none; }
+.nav__enlace:hover, .nav__enlace:focus-visible { text-decoration: underline; }
+.nav__enlace--activo { font-weight: 700; text-decoration: underline; }
+
+.contenido { min-height: 55vh; padding: 32px 20px; }
+.seccion { max-width: 1100px; margin: 0 auto; }
+.titulo { margin-top: 0; line-height: 1.2; }
+.texto-destacado { font-size: 1.15rem; font-weight: 600; }
+
+.tarjeta {
+    margin: 18px 0;
+    padding: 20px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+}
+.tarjeta__titulo { margin-top: 0; }
+.tarjeta__texto { margin-bottom: 0; }
+.tarjeta--destacada { border-width: 2px; }
+
+.imagen-principal { display: block; width: 100%; max-height: 600px; object-fit: cover; }
+.video { display: block; width: min(100%, 400px); height: auto; margin: 24px auto; }
+
+.tabla-tarifas { width: 100%; margin: 24px 0 40px; border-collapse: collapse; }
+.tabla-tarifas th, .tabla-tarifas td { padding: 10px; border: 1px solid var(--borde); text-align: left; }
+.tabla-tarifas thead th { font-weight: 700; }
+
+.formulario { max-width: 650px; }
+.formulario__grupo { margin: 0 0 16px; }
+.formulario__etiqueta { display: block; margin-bottom: 6px; font-weight: 700; }
+.formulario__campo {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+    font: inherit;
+}
+.formulario__campo:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+.boton {
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 4px;
+    background: var(--acento);
+    color: var(--texto-boton);
+    font: inherit;
+    cursor: pointer;
+}
+.boton:hover { filter: brightness(.92); }
+
+.pie { padding: 14px 20px; text-align: center; }
+.pie p { margin: 0; }
+
+@media (max-width: 600px) {
+    .encabezado, .contenido { padding: 18px 14px; }
+    .nav__lista { gap: 4px 12px; }
+    .tabla-tarifas { font-size: .9rem; }
+    .tabla-tarifas th, .tabla-tarifas td { padding: 7px; }
+}

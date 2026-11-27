@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NEXO</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/claro.css" title="Tema Claro">
+    <link rel="alternate stylesheet" href="../css/oscuro.css" title="Tema Oscuro">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado__contenido">
+            <img class="logo" src="../assets/nexo_logo.png" alt="Logo NEXO">
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav__lista">
+                    <li><a class="nav__enlace" href="index.html">Inicio</a></li>
+                    <li><a class="nav__enlace" href="actividades.html">Actividades</a></li>
+                    <li><a class="nav__enlace" href="tarifas.html">Tarifas</a></li>
+                    <li><a class="nav__enlace" href="conocenos.html">Conócenos</a></li>
+                    <li><a class="nav__enlace nav__enlace--activo" href="contacto.html" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenido">
+        <section id="contacto" class="seccion">
+            <h1 class="titulo">Contacto y Ubicación</h1>
+            <p><strong>Horario:</strong> Lunes a Viernes de 07:00 a 22:30 | Sábados de 09:00 a 14:00</p>
+            <p><strong>Teléfono:</strong> 600 000 000</p>
+            <p><strong>Email:</strong> info@nexoclub.es</p>
+
+            <h2>Envíanos un mensaje</h2>
+            <form class="formulario" action="#" method="post">
+                <p class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="nombre">Nombre:</label><br>
+                    <input class="formulario__campo" type="text" id="nombre" name="nombre" required>
+                </p>
+                <p class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="email">Correo electrónico:</label><br>
+                    <input class="formulario__campo" type="email" id="email" name="email" required>
+                </p>
+                <p class="formulario__grupo">
+                    <label class="formulario__etiqueta" for="mensaje">Consulta:</label><br>
+                    <textarea class="formulario__campo" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </p>
+                <button class="boton" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p>&copy; NEXO</p>
+    </footer>
+</body>
+
+</html>
